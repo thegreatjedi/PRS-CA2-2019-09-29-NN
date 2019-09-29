@@ -1,0 +1,14 @@
+conda config --set pip_interop_enabled True
+conda create --name prmls_ca2 python=3.7 jupyter selenium numpy h5py scikit-learn tensorflow-gpu matplotlib pandas pillow
+pip install opencv-python
+
+Notes
+-----
+Requires Conda 4.6 and higher for the built-in interoperability with pip.
+
+Visit https://www.tensorflow.org/install/source_windows#tested_build_configurations to see the compatible Python versions and minimum required CUDA and cuDNN versions for each tensorflow-gpu version. The above installs the latest tensorflow-gpu-1.14.0 which has been tested to work on Python 3.5-3.7, CUDA 10 and cuDNN 7.4.
+
+The above packages are used by the following:
+
+Web Scraper: selenium
+Data Preprocessing: numpy, h5py, opencv
